@@ -29,8 +29,8 @@ int main() {
     std::default_random_engine eng(r());
     std::uniform_real_distribution<double> xDist(0, screenWidth);
     std::uniform_real_distribution<double> yDist(0, screenHeight);
-    std::uniform_real_distribution<double> vxDist(0, 0);
-    std::uniform_real_distribution<double> vyDist(0, 20);
+    std::uniform_real_distribution<double> vxDist(-1, 1);
+    std::uniform_real_distribution<double> vyDist(-1, 1);
 
     bd::Parameters params;
 
